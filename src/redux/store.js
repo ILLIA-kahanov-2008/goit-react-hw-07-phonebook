@@ -16,7 +16,7 @@ const middleware = [...getDefaultMiddleware({
   })]
 
 const store = configureStore({
-  reducer: {contacts: phoneBookReducer},
+  reducer: {phoneBook: phoneBookReducer},
   middleware,
   devTools: process.env.NODE_ENV === 'development'
 },

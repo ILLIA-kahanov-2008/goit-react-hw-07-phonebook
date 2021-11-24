@@ -26,7 +26,7 @@ function Filter({ filterInputValue, filterInputOnChange }) {
   );
 }
 
-const mapStateToProps = ({contacts:{filter}}) => ({
+const mapStateToProps = ({phoneBook:{filter}}) => ({
   filterInputValue: filter,
 });
 
