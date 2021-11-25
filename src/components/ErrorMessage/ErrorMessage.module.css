@@ -1,0 +1,24 @@
+.ErrorMessage {
+  z-index: 10;
+  display: block;
+  border: 1px solid #a3a1a1;
+  min-width: 300px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: lightgrey 1px 4px;
+  padding-bottom: 50px;
+}
+
+.MessageText {
+  margin: 50px auto;
+  color: #757575;
+  text-decoration: underline double red;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.ErrorMessage button {
+  display: block;
+  margin: 0 auto;
+}

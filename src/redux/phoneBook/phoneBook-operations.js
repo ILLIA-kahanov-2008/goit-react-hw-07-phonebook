@@ -5,7 +5,6 @@ export const fetchContacts = createAsyncThunk('contacts/fetchContacts',
   async (_, { rejectWithValue }) => {
       try {
         const contacts = await contactsAPI.fetchAllContacts();
-        // console.log("response is", contacts);
         return contacts;
   } catch (error) {
         return rejectWithValue(error.message);
@@ -21,7 +20,6 @@ export const addNewContact = createAsyncThunk('contacts/addContact',
     try {
       if (isExist) throw new Error(`${name} is already in contacts`)
       const contacts = await contactsAPI.addContact(addingContact);
-            //  console.log("response is", contacts);
         return contacts;
   
   } catch (error) {
@@ -33,7 +31,6 @@ export const removeContact = createAsyncThunk('contacts/removeContact',
   async (id, { rejectWithValue }) => {
     try {
       const contacts = await contactsAPI.deleteContact(id);
-            //  console.log("response is", contacts);
         return contacts;
   } catch (error) {
     return rejectWithValue(error.message);
